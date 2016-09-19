@@ -60,10 +60,10 @@ public class DataSqoop2TestApplicationTests {
 
 
 		MLinkConfig linkConfig = mysqlLink.getConnectorLinkConfig();
-		linkConfig.getStringInput("linkConfig.connectionString").setValue("jdbc:mysql://123.207.151.200:3306/hadoopguide?autoReconnect=true&useSSL=false");
+		linkConfig.getStringInput("linkConfig.connectionString").setValue("jdbc:mysql://ip:3306/hadoopguide?autoReconnect=true&useSSL=false");
 		linkConfig.getStringInput("linkConfig.jdbcDriver").setValue("com.mysql.jdbc.Driver");
-		linkConfig.getStringInput("linkConfig.username").setValue("root");
-		linkConfig.getStringInput("linkConfig.password").setValue("^4826862GUyi$");
+		linkConfig.getStringInput("linkConfig.username").setValue("");
+		linkConfig.getStringInput("linkConfig.password").setValue("");
 
 
 		Status mysqlLinkStatus = client.saveLink(mysqlLink);
